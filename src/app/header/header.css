@@ -1,0 +1,10 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  margin: 1rem 10rem;
+
+  &:first-child {
+    align-self: start;
+  }
+}

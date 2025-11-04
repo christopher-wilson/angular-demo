@@ -1,0 +1,6 @@
+section {
+  display: flex;
+  flex-direction: column;
+  /*corner-shape: bevel;*/
+  border-radius: 7px;
+}

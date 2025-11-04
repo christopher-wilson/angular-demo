@@ -1,25 +1,25 @@
 import { Routes } from '@angular/router';
-import {Home} from './home/home';
 
 export const routes: Routes = [
   {
     path: '',
-    component: Home
+    loadChildren: () => import('./pages/pages-module')
+      .then(m => m.PagesModule),
   },
   {
     path: 'forms',
-    loadChildren: () => import('./forms/forms.module')
-      .then(m => m.FormsModule),
+    loadChildren: () => import('./examples-forms/examples-forms-module')
+      .then(m => m.ExamplesFormsModule),
 
   },
   {
-    path: 'about-me',
-    loadComponent: () => import('./about-page/about-page').then(m => m.AboutPage),
-    title: 'About Me'
+    path: 'pages',
+    loadChildren: () => import('./examples-pages/examples-pages-module')
+      .then(m => m.ExamplesPagesModule),
   },
   {
     path: '**',
-    loadComponent: () => import('./not-found/not-found').then(m => m.NotFound),
+    loadComponent: () => import('./pages/not-found/not-found').then(m => m.NotFound),
     title: 'Page Not Found',
   }
 ];

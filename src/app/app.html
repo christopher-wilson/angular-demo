@@ -1,3 +1,21 @@
-<app-header></app-header>
+<mat-menu #rootMenu="matMenu" yPosition="above">
+  <button mat-menu-item>Christopher Wilson</button>
+  <button mat-menu-item [matMenuTriggerFor]="pageExamples">Page Examples</button>
+  <button mat-menu-item [matMenuTriggerFor]="codeExamples">Code Examples</button>
+  <button mat-menu-item>About</button>
+</mat-menu>
+
+<mat-menu #pageExamples="matMenu">
+  <button mat-menu-item>Login Page</button>
+  <button mat-menu-item>Blog Page</button>
+</mat-menu>
+
+<mat-menu #codeExamples>
+  <button mat-menu-item>Reactive Forms</button>
+</mat-menu>
+
+<button mat-icon-button [matMenuTriggerFor]="rootMenu">
+  <mat-icon>more_vert</mat-icon>
+</button>
 
 <router-outlet />

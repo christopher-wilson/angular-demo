@@ -18,4 +18,4 @@ export const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class FormsModule { }
+export class ExamplesFormsModule { }
