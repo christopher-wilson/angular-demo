@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{o as e}from"./chunk-VBBZWDIL.mjs";import{k as i}from"./chunk-5THIS3FV.mjs";import{$a as r,R as t}from"./chunk-F3L6IRGH.mjs";import"./chunk-X2SEQXRR.mjs";var s=[{path:"login-form",loadComponent:()=>import("./chunk-ZXXHHIRA.mjs").then(o=>o.LoginForm),title:"Basic Login Form",\u0275entryName:"src/app/examples-forms/login-form/login-form.ts"}],n=class o{static \u0275fac=function(m){return new(m||o)};static \u0275mod=r({type:o});static \u0275inj=t({imports:[i,e.forChild(s),e]})};export{n as ExamplesFormsModule,s as routes};

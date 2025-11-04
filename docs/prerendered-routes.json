@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "/your_project_name": {},
+    "/your_project_name/about": {},
+    "/your_project_name/forms": {},
+    "/your_project_name/forms/login-form": {},
+    "/your_project_name/pages": {}
+  }
+}
