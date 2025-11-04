@@ -1,1 +1,0 @@
-import{$a as t,Hb as m,qb as n,rb as i}from"./chunk-YHFH2JMU.js";var r=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=t({type:o,selectors:[["app-login-form"]],decls:2,vars:0,template:function(e,a){e&1&&(n(0,"p"),m(1,"login-form works!"),i())},encapsulation:2})};export{r as LoginForm};
