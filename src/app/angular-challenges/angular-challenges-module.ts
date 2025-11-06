@@ -4,10 +4,7 @@ import {RouterModule, Routes} from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'items-grid',
-    loadComponent: () => import('./items-grid/items-grid')
-      .then(m => m.ItemsGrid),
-    title: 'Item Grid Demo',
+    path: 'projection',
   }
 ]
 
@@ -15,7 +12,7 @@ export const routes: Routes = [
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ]
 })
-export class ExamplesPagesModule { }
+export class AngularChallengesModule { }

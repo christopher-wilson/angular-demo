@@ -1,0 +1,9 @@
+main {
+  display: grid;
+}
+
+.product {
+  & > p {
+    background-color: rgb(238, 238, 238);
+  }
+}

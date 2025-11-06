@@ -1,0 +1,29 @@
+<header>
+  <h1>Unique Items with Search</h1>
+  <div class="search">
+    <input type="search" />
+  </div>
+</header>
+
+<main>
+  <h2>Recently Added Products</h2>
+
+  <section class="products">
+    @for (product of products; track $index) {
+      <div class="product">
+        <img [ngSrc]="product.imageSrc" [alt]="product.description">
+
+        <footer>
+          <h3><a [href]="product.url">{{ product.name }}</a></h3>
+          <p>{{ product.description }}</p>
+        </footer>
+      </div>
+    } @empty {
+      <p>There are no products currently available with this filter.</p>
+    }
+
+    <footer>
+      There are <strong>{{ products.length }}</strong> results.
+    </footer>
+  </section>
+</main>
