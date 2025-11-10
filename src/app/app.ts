@@ -1,6 +1,6 @@
-import {Component, signal} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Header} from './header/header';
-import {RouterOutlet} from '@angular/router';
+import {ActivatedRoute, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +8,14 @@ import {RouterOutlet} from '@angular/router';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('angular-demo');
+export class App implements OnInit {
+  title: string | any = '';
+
+  constructor(private readonly route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.title = this.route.snapshot.routeConfig?.title ?? '';
+
+    console.log(`${this.route}`);
+  }
 }

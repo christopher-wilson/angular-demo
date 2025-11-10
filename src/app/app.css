@@ -8,5 +8,9 @@
 main {
   display: flex;
   flex-direction: column;
-  max-width: 960px;
+  width: 960px;
+
+  & header {
+    width: 100%;
+  }
 }

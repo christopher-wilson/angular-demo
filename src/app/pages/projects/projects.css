@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+}

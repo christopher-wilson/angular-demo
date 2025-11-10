@@ -16,12 +16,12 @@ export const routes: Routes = [
     component: AboutPage,
     title: 'About Page',
   },
-  {
-    path: 'projects',
-    loadComponent: () => import('./projects/projects')
-      .then(c => c.Projects),
-    title: 'Projects',
-  },
+  // {
+  //   path: 'projects',
+  //   loadComponent: () => import('./projects/projects')
+  //     .then(c => c.Projects),
+  //   title: 'Projects',
+  // },
 ]
 
 @NgModule({

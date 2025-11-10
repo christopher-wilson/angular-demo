@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
+import {ProjectListItem} from '../../components/project-list-item/project-list-item';
+import {Card} from 'primeng/card';
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [
+    Card
+  ],
   templateUrl: './projects.html',
   styleUrl: './projects.css',
 })

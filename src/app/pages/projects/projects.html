@@ -1,5 +1,17 @@
-@for (project of projects; track project.name) {
-  <h1>{{ project.name}}</h1> <a [href]="project.url">View Project</a>
-  <p>{{ project.description}}</p>
+<h1>Projects</h1>
 
+@for (project of projects; track project.name) {
+  <p-card [style]="{ width: '25rem', overflow: 'hidden' }">
+    <ng-template #header>
+      <img [src]="project.thumbnailUrl" alt="" style="width:100%">
+    </ng-template>
+
+    <ng-template #subtitle>
+      <a [href]="project.url">View Project</a>
+    </ng-template>
+
+    <ng-template #title>{{ project.name }}</ng-template>
+
+    <p>{{ project.description }}</p>
+  </p-card>
 }
