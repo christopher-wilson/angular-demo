@@ -1,0 +1,5 @@
+@for (project of projects; track project.name) {
+  <h1>{{ project.name}}</h1> <a [href]="project.url">View Project</a>
+  <p>{{ project.description}}</p>
+
+}

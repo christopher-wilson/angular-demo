@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:angular-demo": "node dist/angular-demo/server/server.mjs"
+    "serve:ssr:angular-demo": "node dist/angular-demo/server/server.mjs",
+    "storybook": "ng run angular-demo:storybook",
+    "build-storybook": "ng run angular-demo:build-storybook"
   },
   "prettier": {
     "printWidth": 100,
@@ -41,9 +43,14 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^20.3.9",
     "@angular/build": "^20.3.8",
     "@angular/cli": "^20.3.8",
     "@angular/compiler-cli": "^20.3.0",
+    "@compodoc/compodoc": "^1.1.32",
+    "@storybook/addon-docs": "^10.0.5",
+    "@storybook/addon-onboarding": "^10.0.5",
+    "@storybook/angular": "^10.0.5",
     "@types/express": "^5.0.1",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.17.19",
@@ -53,6 +60,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "storybook": "^10.0.5",
     "typescript": "~5.9.2"
   }
 }

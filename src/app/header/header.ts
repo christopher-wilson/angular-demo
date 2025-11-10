@@ -42,6 +42,11 @@ export class Header {
         ]
       },
       {
+        label: 'Projects',
+        title: 'Projects',
+        url: '/projects',
+      },
+      {
         label: 'Links',
         title: 'External Links',
         items: [

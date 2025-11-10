@@ -2,3 +2,19 @@
 @import 'modern-normalize.css';
 @import 'variables.css';
 @import "primeicons/primeicons.css";
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  & > main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+html {
+  font-family: "Noto Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}

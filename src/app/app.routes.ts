@@ -1,7 +1,11 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-
+  {
+    path: '',
+    loadChildren: () => import('./pages/pages-module')
+      .then(m => m.PagesModule)
+  },
   {
     path: 'forms',
     loadChildren: () => import('./examples-forms/examples-forms-module')

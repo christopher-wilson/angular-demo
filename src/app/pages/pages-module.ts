@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
 import {Home} from './home/home';
 import {AboutPage} from './about-page/about-page';
+import {Projects} from './projects/projects';
 
 export const routes: Routes = [
   {
@@ -16,10 +17,11 @@ export const routes: Routes = [
     title: 'About Page',
   },
   {
-    path: '**',
-    loadComponent: () => import('./not-found/not-found').then(m => m.NotFound),
-    title: 'Page Not Found',
-  }
+    path: 'projects',
+    loadComponent: () => import('./projects/projects')
+      .then(c => c.Projects),
+    title: 'Projects',
+  },
 ]
 
 @NgModule({
