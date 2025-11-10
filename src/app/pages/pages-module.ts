@@ -6,10 +6,15 @@ import {AboutPage} from './about-page/about-page';
 import {Projects} from './projects/projects';
 
 export const routes: Routes = [
+  // {
+  //   path: '',
+  //   component: Home,
+  //   title: 'Home',
+  // },
   {
     path: '',
-    component: Home,
-    title: 'Home',
+    redirectTo: 'about',
+    pathMatch: 'full',
   },
   {
     path: 'about',
