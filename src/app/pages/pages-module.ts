@@ -16,6 +16,7 @@ export const routes: Routes = [
     component: AboutPage,
     title: 'About Page',
   },
+
   // {
   //   path: 'projects',
   //   loadComponent: () => import('./projects/projects')
