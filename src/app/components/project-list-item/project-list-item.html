@@ -1,0 +1,13 @@
+<p-card [style]="{ width: '25rem', overflow: 'hidden' }">
+  <ng-template #header>
+    <img [src]="project().thumbnailUrl" alt="">
+  </ng-template>
+
+  <ng-template #subtitle>
+    <a [href]="project().url"></a>
+  </ng-template>
+
+  <ng-template #title>{{ project().name }}</ng-template>
+
+  <p>{{ project().description }}</p>
+</p-card>
