@@ -22,7 +22,7 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/not-found/not-found').then(m => m.NotFound),
     title: 'Page Not Found',
     data: {
-      statusCode: 404,
+      statusCode: '404',
     }
   }
 ];

@@ -22,6 +22,8 @@ export class NotFound {
         this.statusCode = data['statusCode'];
       })
 
+      console.log(this.statusCode)
+
       switch (this.statusCode) {
         case '404': this.pageIsNotFound(); break;
         default: this.pageIsUnderConstruction();
