@@ -14,7 +14,7 @@
   }
 
   ::ng-deep p-menubar {
-    height: 3rem;
+    height: var(--nav-bar-height);
     padding: 0 2rem;
   }
 

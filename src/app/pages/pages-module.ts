@@ -16,6 +16,11 @@ export const routes: Routes = [
     component: AboutPage,
     title: 'About Page',
   },
+  {
+    path: 'projects',
+    loadComponent: () => import('./not-found/not-found')
+      .then(c => c.NotFound)
+  }
 
   // {
   //   path: 'projects',

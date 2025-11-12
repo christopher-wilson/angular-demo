@@ -1,10 +1,12 @@
 <section>
-  <header>
-    <h1>404</h1>
-  </header>
+  @if (statusCode) {
+    <header>
+      <h1>{{ statusCode }}</h1>
+    </header>
+  }
   <main>
-    <h2>Page not found</h2>
-    <p>This page does not seem to exist.</p>
+    <h2>{{ messageTitle }}</h2>
+    <p>{{ messageBody }}</p>
     <p><a routerLink="/">Go to the homepage?</a></p>
   </main>
 </section>

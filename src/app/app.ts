@@ -15,7 +15,5 @@ export class App implements OnInit {
 
   ngOnInit(): void {
     this.title = this.route.snapshot.routeConfig?.title ?? '';
-
-    console.log(`${this.route}`);
   }
 }

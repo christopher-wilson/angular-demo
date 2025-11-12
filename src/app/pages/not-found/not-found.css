@@ -2,8 +2,8 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 48px - 4rem);
   justify-content: center;
+  margin-top: var(--position-eyeline);
 }
 
 section {
