@@ -5,6 +5,10 @@
   gap: 4rem;
 }
 
+h1 {
+  color: var(--color-celtic-blue);
+}
+
 main {
   display: flex;
   flex-direction: column;

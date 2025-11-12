@@ -1,0 +1,45 @@
+:host {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 48px - 4rem);
+  justify-content: center;
+}
+
+section {
+  --header-height: 10rem;
+
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  height: var(--header-height);
+  line-height: 1;
+  width: fit-content;
+
+  header {
+    & h1 {
+      color: var(--color-celtic-blue);
+      height: var(--header-height);
+      font-size: var(--header-height);
+      padding: 0 1rem;
+      margin: 0;
+      text-shadow: 0.5rem 0.5rem var(--color-delft-blue);
+    }
+  }
+
+  & main {
+    color: var(--color-delft-blue);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0 0.5rem 0;
+
+    & h2 {
+      margin: 0;
+    }
+
+    & p:last-child {
+      margin-bottom: 0;
+      margin-top: auto;
+    }
+  }
+}
