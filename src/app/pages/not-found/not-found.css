@@ -31,7 +31,6 @@ section {
     color: var(--color-delft-blue);
     display: flex;
     flex-direction: column;
-    padding: 1.5rem 0 0.5rem 0;
 
     & h2 {
       margin: 0;

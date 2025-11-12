@@ -15,7 +15,7 @@
 
   ::ng-deep p-menubar {
     height: var(--nav-bar-height);
-    padding: 0 2rem;
+    padding: 0 2vw;
   }
 
   ::ng-deep .p-menubar-item:first-of-type,

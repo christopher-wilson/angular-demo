@@ -3,7 +3,12 @@
 @import 'variables.css';
 @import "primeicons/primeicons.css";
 
-body {
+@import url('https://fonts.cdnfonts.com/css/rubik-2');
+@import url('https://fonts.cdnfonts.com/css/fjalla-one-2');
+@import url('https://fonts.cdnfonts.com/css/golos-text');
+
+
+  body {
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -16,5 +21,11 @@ body {
 }
 
 html {
-  font-family: "Noto Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Golos Text", "Rubik", "Noto Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: var(--color-delft-blue);
+  font-family: "Fjalla One", sans-serif;
+  margin-top: 0;
 }
